@@ -1,11 +1,13 @@
 <?php
-$host = "127.0.0.1";
+$dbhost = "127.0.0.1";
 $root = "root";
 $rootPass = "";
 $db = "hms";
+$folder="/hospital/";
+$host="http://".$_SERVER['SERVER_NAME'].$folder;
 
 // Create connection
-$conn = mysqli_connect($host, $root, $rootPass,$db);
+$conn = mysqli_connect($dbhost, $root, $rootPass,$db);
 // Check connection
 
 if (!$conn) {

@@ -1,5 +1,5 @@
 <?php
- require('/phpClasses/person.php');
+ require('./phpclasses/person.php');
  session_start();
  if( isset( $_SESSION['user'] ) ){
        $sql = "SELECT * FROM `person` WHERE `userName` = '".$_SESSION['user']->userName ."' AND `uPassword` ='". $_SESSION['user']->uPassword."'" ;

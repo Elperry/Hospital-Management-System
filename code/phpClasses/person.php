@@ -5,7 +5,7 @@
    var $fullName,$userName,$uPassword,$birthday,$gender,$email,$mobile,$phone,$address,$city,$type;
 
    public function login($sql){
-                      include 'config\config.php';
+                      include './config/config.php';
                  $loginValidation= mysqli_query($conn,$sql);
                  if(mysqli_num_rows($loginValidation)) {
                          // login
